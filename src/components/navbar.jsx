@@ -4,11 +4,11 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <div className=' pt-10 flex justify-center items-center'>
+        <div className=' pt-5 flex justify-center items-center'>
             {/* Desktop View Navbar */}
-            <div className='hidden md:block bg-[#3f3d3d] md:w-[70vw] p-10 md:rounded-full md:h-[8vh]'>
+            <div className='hidden md:block bg-[#3f3d3d] sm:w-[60vw] sm:h-[6vh] md:w-[70vw] p-10 md:rounded-full md:h-[8vh]'>
                 <div className='md:flex justify-between items-center text-center text-white'>
-                    <h1 className='md:text-3xl'>FAAKO</h1>
+                    <h1 className='sm:text-2xl  md:text-3xl'>FAAKO</h1>
                     <nav>
                         <ul className='md:text-3xl md:flex md:space-x-10'>
                             <a href="/"><li>Home</li></a>
@@ -23,15 +23,15 @@ const Navbar = () => {
             </div>
 
             {/* Mobile View Navbar */}
-            <div className='md:hidden bg-[#3f3d3d] w-[90vw] rounded-xl h-[8vh]'>
+            <div className='md:hidden  bg-[#3f3d3d] w-[90vw] rounded-xl h-[8vh]'>
                 <nav>
-                    <ul className='flex justify-center items-center p-3 space-x-7'>
-                        <li><HomeIcon className='text-white w-6' /></li>
-                        <li><Contact className='text-white w-6' /></li>
-                        <li><UserCog className='text-white w-6' /></li>
-                        <li><Briefcase className='text-white w-6' /></li>
-                        <li><Folder className='text-white w-6' /></li>
-                        <li><Phone className='text-white w-6' /></li>
+                    <ul className='flex justify-center items-center p-3 sm:space-x-9 space-x-7'>
+                        <li><HomeIcon className='text-white w-6 sm:w-9' /></li>
+                        <li><Contact className='text-white w-6 sm:w-9' /></li>
+                        <li><UserCog className='text-white w-6 sm:w-9' /></li>
+                        <li><Briefcase className='text-white w-6 sm:w-9' /></li>
+                        <li><Folder className='text-white w-6 sm:w-9' /></li>
+                        <li><Phone className='text-white w-6 sm:w-9' /></li>
                     </ul>
                 </nav>
             </div>
